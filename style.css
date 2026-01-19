@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f0f17;
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.4rem 3.2rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: white;
+    background: #6366f1;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.35);
+}
+
+.btn:hover {
+    background: #4f46e5;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(99, 102, 241, 0.5);
+}
+
+/* Адаптив — если экран маленький, кнопки станут в столбик */
+@media (max-width: 900px) {
+    .buttons-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
