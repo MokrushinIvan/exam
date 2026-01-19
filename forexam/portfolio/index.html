@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Портфолио сайтик — Мокрушин Иван</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Анимированный космический фон -->
+<div class="space-bg">
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+</div>
+
+  <!-- Блок загрузки -->
+  <div class="loader-con" id="loader">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="doc_2025-09-11_12-12-56.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+
+  <canvas id="spaceCanvas"></canvas>
+
+  <!-- Хедер -->
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#education">Образование</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#contact">Связь</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <!-- Обо мне -->
+  <section class="hero" id="about">
+    <p class="hero-subtitle">Мокрушин Иван</p>
+    <h1 class="hero-title">3D-Designer</h1>
+    <p class="hero-text">
+      Привет! Меня зовут Иван, и я — 3D-дизайнер.<br>
+      Работаю над проектами в сфере 3D и открыт к новым коллаборациям.
+    </p>
+    <a href="#contact" class="hero-btn">Сотрудничать</a>
+  </section>
+
+  <!-- Образование -->
+  <section id="education" class="education">
+    <h2 class="section-title">Образование</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2022 — 2026</div>
+        <div class="timeline-content">
+          <h3>Бакалавриат — Прикладная информатика в дизайне</h3>
+          <p>Санкт-Петербургский государственный университет
+промышленных технологий и дизайна, Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021 — 2021</div>
+        <div class="timeline-content">
+          <h3>Contented</h3>
+          <p>Онлайн-курс «3D-художник» от онлайн-школы дизайна Contented</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Навыки -->
+<section id="skills" class="skills">
+  <h2 class="section-title">Навыки</h2>
+  
+  <div class="skills-grid">
+    <!-- Blender -->
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="Blender">
+      <span>Blender</span>
+    </div>
+
+
+
+    <!-- Substance Painter — используем прямую ссылку с GitHub (не skillicons!) -->
+    <div class="skill-item">
+      <img src="pngwing.com (1).png" alt="Substance Painter">
+      <span>Substance Painter</span>
+    </div>
+
+    <!-- Photoshop -->
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt="Photoshop">
+      <span>Adobe Photoshop</span>
+    </div>
+
+    <!-- ZBrush -->
+    <div class="skill-item">
+      <img src="pngwing.com (2).png" alt="ZBrush">
+      <span>ZBrush</span>
+    </div>
+
+    <!-- Marvelous Designer — рабочая ссылка -->
+    <div class="skill-item">
+      <img src="MD11-Icon.png" alt="Marvelous Designer">
+      <span>Marvelous Designer</span>
+    </div>
+
+    <!-- Unreal Engine -->
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine">
+      <span>Unreal Engine</span>
+    </div>
+
+    <!-- After Effects -->
+   
+  </div>
+</section>
+    
+  <!-- Портфолио -->
+  <section id="portfolio" class="portfolio">
+    <h2 class="portfolio-title">Моё портфолио</h2>
+
+    <div class="slider">
+      <button class="slider-btn prev" aria-label="Предыдущий слайд">❮</button>
+      
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide"><img src="work1.png" alt="Проект 1"></div>
+          <div class="slide"><img src="work2.jpg" alt="Проект 2"></div>
+          <div class="slide"><img src="work3.jpg" alt="Проект 3"></div>
+          <div class="slide"><img src="work4.png" alt="Проект 4"></div>
+        </div>
+      </div>
+
+      <button class="slider-btn next" aria-label="Следующий слайд">❯</button>
+    </div>
+  </section>
+    
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <h2 class="contact-title">Связь</h2>
+    <p class="contact-subtitle">Оставьте сообщение или свяжитесь со мной напрямую</p>
+
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" placeholder="Ваше сообщение..." rows="5" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> yourmail@example.com</p>
+        <p><strong>Telegram:</strong> @yourusername</p>
+        <p><strong>Instagram:</strong> @yourprofile</p>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #888;">
+          На весь сайтик ушло 2.5 часа
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
